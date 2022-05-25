@@ -1,6 +1,6 @@
 {
-  "name": "spa",
-  "homepage": "http://wind340.github.io/porfolio",
+  "name": "portfolio",
+  "homepage": "http://wind340.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
