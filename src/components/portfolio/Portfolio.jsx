@@ -22,6 +22,7 @@ const data = [
     title: '카페 JSP',
     skills: 'Java / JSP / MySQL / Tomcat / BootStrap',
     github: 'https://github.com/wind340/AwesomePlace',
+    demo: 'https://github.com/wind340/AwesomePlace',
   },
   {
     id: 3,
@@ -67,8 +68,8 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <h5>{skills}</h5>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target='_blank'>Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                  <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
+                  <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
                 </div>
               </article>
             )
