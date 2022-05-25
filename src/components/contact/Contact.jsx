@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerFill} from 'react-icons/ri'
 import {BsWhatsapp} from 'react-icons/bs'
-
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0vvhyop', 'template_9dn602n', form.current, 'b7J1n7oXhkUFp1k-Q')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    e.target.reset();
+  };
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
