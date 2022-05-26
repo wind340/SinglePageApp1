@@ -14,7 +14,7 @@ portfolio page 부분의 live demo 구현중에 있습니다.
 - [ ] 카페 JSP
 - [x] SNS CLONE
 - [x] 12간지 MBTI CLONE
-- [ ] 감정다이어리 CLONE
+- [x] 감정다이어리 CLONE
 
 ## LIVE DEMO
 https://wind340.github.io/portfolio/
